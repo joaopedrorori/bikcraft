@@ -1,0 +1,42 @@
+.parceiros {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.parceiros h2 {
+  margin-bottom: 60px;
+}
+.parceiros ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  background-color: var(--cor-2);
+  margin: 20px;
+}
+
+.parceiros ul li {
+  display: grid;
+  background-color: var(--cor-0);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+@media (max-width: 1000px) {
+  .parceiros ul {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .parceiros ul {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .parceiros ul li {
+    height: 100px;
+  }
+}
