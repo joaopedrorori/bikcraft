@@ -12,7 +12,6 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
   background-color: var(--cor-2);
-  margin: 20px;
 }
 
 .parceiros ul li {
@@ -34,7 +33,6 @@
 @media (max-width: 600px) {
   .parceiros ul {
     grid-template-columns: 1fr;
-    margin: 20px;
   }
   .parceiros ul li {
     height: 100px;
