@@ -50,7 +50,10 @@ const galeiraContainer = document.querySelector(".bicicleta-imagens");
 
 function trocarImagem(event) {
   const img = event.currentTarget;
-  galeiraContainer.prepend(img);
+  const media = matchMedia("(min-width: 1000px)").matches;
+  if (media) {
+    galeiraContainer.prepend(img);
+  }
   //prepend remove o elemento clicado e joga pro primeiro elemento
 }
 
